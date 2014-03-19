@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="com.example.financereborn.activities.WelcomeViewActivity" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/activities/WelcomeViewActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="170" width="237" x="1525" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" language="java" name="com.example.financereborn.odp.IObserver" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/odp/IObserver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="159" x="514" y="655"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" name="com.example.financereborn.odp.ISubject" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/odp/ISubject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="134" width="218" x="990" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="com.example.financereborn.presenters.WelcomeViewPresenter" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/presenters/WelcomeViewPresenter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="116" width="190" x="268" y="655"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="com.example.financereborn.views.IWelcomeView" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/views/IWelcomeView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="98" width="166" x="1525" y="655"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="6" language="java" name="com.example.financereborn.views.ILoginView" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/views/ILoginView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="62" width="166" x="1248" y="655"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="com.example.financereborn.presenters.RegisterViewPresenter" 
+    project="FinanceReborn" file="/FinanceReborn/src/com/example/financereborn/presenters/RegisterViewPresenter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="190" x="713" y="655"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.example.financereborn.presenters.LoginViewPresenter" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/presenters/LoginViewPresenter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="116" width="190" x="943" y="655"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.example.financereborn.odp.SubjectActivity" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/odp/SubjectActivity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="170" width="218" x="970" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.example.financereborn.odp.ObserverActivity" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/odp/ObserverActivity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="170" width="159" x="268" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.example.financereborn.models.User" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/models/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="332" width="232" x="42" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="12" language="java" name="com.example.financereborn.models.IUser" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/models/IUser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="206" width="186" x="42" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="13" language="java" name="com.example.financereborn.activities.RegisterViewActivity" 
+    project="FinanceReborn" file="/FinanceReborn/src/com/example/financereborn/activities/RegisterViewActivity.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="237" x="713" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.example.financereborn.activities.LoginViewActivity" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/activities/LoginViewActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="116" width="237" x="1248" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="15" language="java" name="com.example.financereborn.database.IStorage" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/database/IStorage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="98" width="185" x="467" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="16" language="java" name="com.example.financereborn.database.LocalStorage" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/database/LocalStorage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="152" width="185" x="354" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.example.financereborn.database.RemoteStorage" project="FinanceReborn" 
+    file="/FinanceReborn/src/com/example/financereborn/database/RemoteStorage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="80" width="185" x="579" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="18">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <association id="20">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="21" name="presenter"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <bendpoint x="682" y="409"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="24" name="observers"/>      
+      <multiplicity id="25" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="26">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <realization id="29">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <realization id="31">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="32">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <generalization id="33">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <realization id="34">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="35">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <association id="36">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="37" name="presenter"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
