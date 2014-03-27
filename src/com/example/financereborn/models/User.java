@@ -1,5 +1,8 @@
 package com.example.financereborn.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * User contains all basic information about a single user.
  * 
@@ -10,19 +13,28 @@ public class User implements IUser {
 	private String firstName;
 	private String lastName;
 	private String username;
-	private String uid;
+	//private String uid;
 	private String password;
+	
+	private Accounts accounts;
 
-	public User(String f, String l, String uName, String uId, String p) {
+	public User(String f, String l, String uName, String p) {
+		accounts = new Accounts();
+		
 		firstName = f;
 		lastName = l;
 		username = uName;
-		uid = uId;
+		//uid = uId;
 		password = p;
 	}
 
-	public User(String uName, String p) {
+	/*public User(String uName, String p) {
 		this("John", "Doe", uName, "1", p);
+	}*/
+	
+	@Override
+	public List<Account> getAccounts() {
+		return accounts.getAccounts();
 	}
 
 	@Override
@@ -40,10 +52,10 @@ public class User implements IUser {
 		return username;
 	}
 
-	@Override
+	/*@Override
 	public String getUid() {
 		return uid;
-	}
+	}*/
 
 	@Override
 	public String getPassword() {

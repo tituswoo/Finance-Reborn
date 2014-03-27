@@ -57,7 +57,7 @@
             android:hint="Username"
             android:inputType="text|textPersonName"
             android:maxLength="12"
-            android:singleLine="true" >           
+            android:singleLine="true" >
         </EditText>
     </LinearLayout>
 

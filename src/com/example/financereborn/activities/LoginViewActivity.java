@@ -22,6 +22,8 @@ public class LoginViewActivity extends SubjectActivity implements ILoginView {
 
 		presenter = new LoginViewPresenter();
 		registerObserver(presenter);
+		
+		getActionBar().setTitle("Login");
 	}
 
 	@Override

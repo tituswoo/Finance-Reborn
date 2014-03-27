@@ -1,5 +1,7 @@
 package com.example.financereborn.models;
 
+import java.util.List;
+
 public interface IUser {
 	public String getFirstName();
 
@@ -7,7 +9,9 @@ public interface IUser {
 
 	public String getUsername();
 
-	public String getUid();
+	//public String getUid();
+	
+	public List<Account> getAccounts();
 
 	public String getPassword();
 

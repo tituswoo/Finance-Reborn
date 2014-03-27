@@ -17,10 +17,8 @@ import android.view.View;
 
 public class WelcomeViewPresenter extends ObserverActivity {
 
-	Database db;
-
 	public WelcomeViewPresenter() {
-		db = new Database();
+
 	}
 
 	@Override
@@ -31,7 +29,7 @@ public class WelcomeViewPresenter extends ObserverActivity {
 			IWelcomeView view = (IWelcomeView) super.getSubject();
 			String pass = view.getPassword();
 			String username = view.getUsername();
-			if (db.userExists(new User(username, pass))) {
+			if (Database.login(username, pass)) {
 				startDashboardActivity();
 			} else {
 				new AlertDialog.Builder(super.getSubject()).setTitle("Eww")

@@ -1,50 +1,123 @@
 package com.example.financereborn.database;
 
+import android.util.Log;
+
+import com.example.financereborn.models.Account;
 import com.example.financereborn.models.User;
 
 /**
- * Trying this out.. a facade to control the local storage and remote storage
+ * A singleton/facade to control the local storage and remote storage
  * stuff.
  * 
  * @author Titus Woo
  * 
  */
-public class Database implements IDatabase, IStorage {
+public class Database {
 
-	@Override
-	public boolean save() {
-		// TODO Auto-generated method stub
-		return false;
+	private static Database instance = null;
+	private static User user = new User("Titus", "Woo", "twoo", "pass");
+
+	/*private Database() {
+		// Do nothing
+		getInstance();
 	}
 
-	@Override
-	public boolean load() {
-		// TODO Auto-generated method stub
-		return false;
+	public static Database getInstance() {
+		if (instance == null) {
+			synchronized (Database.class) {
+				if (instance == null) {
+					instance = new Database();
+					user = new User("John", "Doe", "John", "jdoe", "pass123");
+					load();
+				}	
+			}			
+		}
+
+		return instance;
+	}*/
+	
+	public static User getUser() {
+		return user;
 	}
 
-	@Override
+	public static boolean save() {
+		if (hasInternetConnection()) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public static boolean load() {
+		if (hasInternetConnection()) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
 	public void refresh() {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
-	public boolean addUser(User user) {
+	public static boolean addUser(User u) {
+		if (hasInternetConnection()) {
+			return false;
+		} else {
+			if (!userExists(u.getUsername())) {
+				user = u;
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+	
+	public static boolean addAccount(Account a) {
+		if (hasInternetConnection()) {
+			return false;
+		} else {
+			return user.getAccounts().add(a);
+		}
+	}
+
+	public static boolean removeUser(User user) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
-	public boolean removeUser(User user) {
-		// TODO Auto-generated method stub
-		return false;
+	public static boolean login(String username, String pass) {
+		if (username == null || pass == null) {
+			return false;
+		}
+		
+		if (hasInternetConnection()) {
+			return false;
+		} else {
+			if (user.getUsername().equals(username)
+					&& user.getPassword().equals(pass)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
 	}
 
-	@Override
-	public boolean userExists(User user) {
-		// TODO Auto-generated method stub
-		return true;
+	public static boolean userExists(String username) {
+		if (hasInternetConnection()) {
+			return false;
+		} else {
+			if (user.getUsername().equals(username)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+
+	public static boolean hasInternetConnection() {
+		return false;
 	}
 
 }

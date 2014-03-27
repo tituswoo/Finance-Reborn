@@ -4,4 +4,6 @@ public interface IDashboardView {
 	public void setWelcomeMsg(String msg);
 
 	public String getWelcomeMsg();
+	
+	public void listAccounts();
 }
