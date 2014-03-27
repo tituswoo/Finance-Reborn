@@ -31,6 +31,7 @@ public class WelcomeViewPresenter extends ObserverActivity {
 			String username = view.getUsername();
 			if (Database.login(username, pass)) {
 				startDashboardActivity();
+				finishActivity();
 			} else {
 				new AlertDialog.Builder(super.getSubject()).setTitle("Eww")
 						.setMessage("Bad credentials.")
@@ -54,5 +55,10 @@ public class WelcomeViewPresenter extends ObserverActivity {
 		Activity activity = super.getSubject();
 		Intent intent = new Intent(activity, RegisterViewActivity.class);
 		activity.startActivity(intent);
+	}
+	
+	private void finishActivity() {
+		Activity activity = super.getSubject();
+		activity.finish();
 	}
 }
