@@ -12,13 +12,13 @@ public class Transactions {
 
 	public List<Transaction> find(double amount) {
 		List<Transaction> list = new ArrayList<Transaction>();
-		
+
 		for (Transaction t : transactions) {
 			if (t.getAmount() == amount) {
 				list.add(t);
 			}
 		}
-		
+
 		return list;
 	}
 

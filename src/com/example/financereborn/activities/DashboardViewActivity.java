@@ -13,7 +13,10 @@ import com.example.financereborn.presenters.DashboardViewPresenter;
 import com.example.financereborn.views.IDashboardView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -31,7 +34,7 @@ public class DashboardViewActivity extends SubjectActivity implements
 		presenter = new DashboardViewPresenter();
 		registerObserver(presenter);
 		notifyObservers();
-		
+
 		listAccounts();
 		getActionBar().setTitle("Dashboard");
 	}
@@ -54,17 +57,28 @@ public class DashboardViewActivity extends SubjectActivity implements
 		TextView textView = (TextView) findViewById(R.id.dashboard_TextEdit_welcomeMsg);
 		return textView.getText().toString();
 	}
-	
+
 	@Override
 	public void listAccounts() {
 		ArrayList<String> accounts = new ArrayList<String>();
-		
+
 		for (Account a : Database.getUser().getAccounts()) {
 			accounts.add(a.getName());
 		}
-		
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, accounts);
+
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, accounts);
 		ListView listView = (ListView) findViewById(R.id.dashboard_ListView_accounts);
 		listView.setAdapter(adapter);
+
+		listView.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				Log.e("info", "list view item clicked.");
+			}
+
+		});
 	}
 }

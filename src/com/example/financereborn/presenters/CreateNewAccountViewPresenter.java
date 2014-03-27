@@ -27,8 +27,10 @@ public class CreateNewAccountViewPresenter extends ObserverActivity {
 			break;
 		case R.id.create_new_account_Button_addAccount:
 			if (checkAccountInfo()) {
-				ICreateNewAccountView view = (ICreateNewAccountView) super.getSubject();
-				Database.addAccount(new Account(view.getAccountName(), view.getAccountDesc()));
+				ICreateNewAccountView view = (ICreateNewAccountView) super
+						.getSubject();
+				Database.addAccount(new Account(view.getAccountName(), view
+						.getAccountDesc()));
 				toast("Account create sucessfully.");
 				finishActivity();
 			} else {

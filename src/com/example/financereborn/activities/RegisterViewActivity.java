@@ -12,7 +12,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.widget.EditText;
 
-public class RegisterViewActivity extends SubjectActivity implements IRegisterView {
+public class RegisterViewActivity extends SubjectActivity implements
+		IRegisterView {
 
 	RegisterViewPresenter presenter;
 
@@ -21,10 +22,9 @@ public class RegisterViewActivity extends SubjectActivity implements IRegisterVi
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register_view);
 
-		
 		presenter = new RegisterViewPresenter();
 		registerObserver(presenter);
-		
+
 		getActionBar().setTitle("Register");
 	}
 

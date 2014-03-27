@@ -9,8 +9,8 @@ public interface IUser {
 
 	public String getUsername();
 
-	//public String getUid();
-	
+	// public String getUid();
+
 	public List<Account> getAccounts();
 
 	public String getPassword();

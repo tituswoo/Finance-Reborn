@@ -30,18 +30,18 @@ public class RegisterViewPresenter extends ObserverActivity {
 						.setNeutralButton("Okay", null).show();
 			} else {
 				IRegisterView view = (IRegisterView) super.getSubject();
-				
+
 				String f = view.getFirstName();
 				String l = view.getLastName();
 				String username = view.getUsername();
 				String pswd = view.getPassword();
-				
+
 				if (Database.addUser(new User(f, l, username, pswd))) {
 					toast("User registered sucessfully.");
 					finishActivity();
 				} else {
 					toast("ERROR: Failed to register user. Try again.");
-				}				
+				}
 			}
 			break;
 		}
@@ -54,7 +54,7 @@ public class RegisterViewPresenter extends ObserverActivity {
 
 	private boolean checkRegistration() {
 		boolean passed = true;
-		
+
 		IRegisterView view = (IRegisterView) super.getSubject();
 
 		if (view.getUsername().equals(""))
@@ -70,7 +70,7 @@ public class RegisterViewPresenter extends ObserverActivity {
 
 		return passed;
 	}
-	
+
 	private void toast(String msg) {
 		Context context = super.getSubject().getApplicationContext();
 		CharSequence text = msg;

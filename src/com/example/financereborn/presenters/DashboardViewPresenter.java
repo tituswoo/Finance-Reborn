@@ -17,7 +17,8 @@ public class DashboardViewPresenter extends ObserverActivity {
 	public void update() {
 		Log.d("info", "Oh yeah, I got in bro.");
 		IDashboardView view = (IDashboardView) super.getSubject();
-		view.setWelcomeMsg("Welcome, " + Database.getUser().getFirstName() + '.');
+		view.setWelcomeMsg("Welcome, " + Database.getUser().getFirstName()
+				+ '.');
 	}
 
 	@Override
@@ -28,7 +29,7 @@ public class DashboardViewPresenter extends ObserverActivity {
 			break;
 		}
 	}
-	
+
 	private void startCreateNewAccountActivity() {
 		Activity activity = super.getSubject();
 		Intent intent = new Intent(activity, CreateNewAccountViewActivity.class);

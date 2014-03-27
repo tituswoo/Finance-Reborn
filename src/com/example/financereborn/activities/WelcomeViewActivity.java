@@ -24,7 +24,7 @@ public class WelcomeViewActivity extends SubjectActivity implements
 
 		presenter = new WelcomeViewPresenter();
 		registerObserver(presenter);
-		
+
 		getActionBar().setTitle("Welcome");
 	}
 

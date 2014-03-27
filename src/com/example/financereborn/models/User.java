@@ -13,25 +13,26 @@ public class User implements IUser {
 	private String firstName;
 	private String lastName;
 	private String username;
-	//private String uid;
+	// private String uid;
 	private String password;
-	
+
 	private Accounts accounts;
 
 	public User(String f, String l, String uName, String p) {
 		accounts = new Accounts();
-		
+
 		firstName = f;
 		lastName = l;
 		username = uName;
-		//uid = uId;
+		// uid = uId;
 		password = p;
 	}
 
-	/*public User(String uName, String p) {
-		this("John", "Doe", uName, "1", p);
-	}*/
-	
+	/*
+	 * public User(String uName, String p) { this("John", "Doe", uName, "1", p);
+	 * }
+	 */
+
 	@Override
 	public List<Account> getAccounts() {
 		return accounts.getAccounts();
@@ -52,10 +53,9 @@ public class User implements IUser {
 		return username;
 	}
 
-	/*@Override
-	public String getUid() {
-		return uid;
-	}*/
+	/*
+	 * @Override public String getUid() { return uid; }
+	 */
 
 	@Override
 	public String getPassword() {

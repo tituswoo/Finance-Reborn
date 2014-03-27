@@ -12,19 +12,20 @@ import android.app.Activity;
 import android.view.Menu;
 import android.widget.TextView;
 
-public class CreateNewAccountViewActivity extends SubjectActivity implements ICreateNewAccountView {
+public class CreateNewAccountViewActivity extends SubjectActivity implements
+		ICreateNewAccountView {
 
 	CreateNewAccountViewPresenter presenter;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_new_account_view);
-		
+
 		presenter = new CreateNewAccountViewPresenter();
 		registerObserver(presenter);
 		notifyObservers();
-		
+
 		getActionBar().setTitle("New Account");
 	}
 
