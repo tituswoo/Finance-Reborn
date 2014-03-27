@@ -24,41 +24,47 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080016;
-        public static final int dashboard_Button_cashFlowReport=0x7f080005;
-        public static final int dashboard_Button_createNewAccount=0x7f080004;
-        public static final int dashboard_LinearLayout_container=0x7f080003;
-        public static final int dashboard_TextEdit_welcomeMsg=0x7f080000;
-        public static final int listView1=0x7f080002;
-        public static final int login_Button_cancel=0x7f080009;
-        public static final int login_Button_login=0x7f08000a;
-        public static final int login_EditText_password=0x7f080008;
-        public static final int login_EditText_username=0x7f080006;
-        public static final int mainActivity_Button_login=0x7f080014;
-        public static final int mainActivity_Button_register=0x7f080015;
-        public static final int register_Button_cancel=0x7f080010;
-        public static final int register_Button_register=0x7f080011;
-        public static final int register_EditText_confirmPass=0x7f08000f;
-        public static final int register_EditText_firstName=0x7f08000b;
-        public static final int register_EditText_lastName=0x7f08000c;
-        public static final int register_EditText_pass=0x7f08000e;
-        public static final int register_EditText_username=0x7f08000d;
-        public static final int textView1=0x7f080001;
-        public static final int textView2=0x7f080007;
-        public static final int welcome_EditText_password=0x7f080013;
-        public static final int welcome_EditText_username=0x7f080012;
+        public static final int action_settings=0x7f08001a;
+        public static final int create_new_account_Button_addAccount=0x7f080003;
+        public static final int create_new_account_Button_cancel=0x7f080002;
+        public static final int create_new_account_EditText_accountDesc=0x7f080001;
+        public static final int create_new_account_EditText_accountName=0x7f080000;
+        public static final int dashboard_Button_cashFlowReport=0x7f080009;
+        public static final int dashboard_Button_createNewAccount=0x7f080008;
+        public static final int dashboard_LinearLayout_container=0x7f080007;
+        public static final int dashboard_ListView_accounts=0x7f080006;
+        public static final int dashboard_TextEdit_welcomeMsg=0x7f080004;
+        public static final int login_Button_cancel=0x7f08000d;
+        public static final int login_Button_login=0x7f08000e;
+        public static final int login_EditText_password=0x7f08000c;
+        public static final int login_EditText_username=0x7f08000a;
+        public static final int mainActivity_Button_login=0x7f080018;
+        public static final int mainActivity_Button_register=0x7f080019;
+        public static final int register_Button_cancel=0x7f080014;
+        public static final int register_Button_register=0x7f080015;
+        public static final int register_EditText_confirmPass=0x7f080013;
+        public static final int register_EditText_firstName=0x7f08000f;
+        public static final int register_EditText_lastName=0x7f080010;
+        public static final int register_EditText_pass=0x7f080012;
+        public static final int register_EditText_username=0x7f080011;
+        public static final int textView1=0x7f080005;
+        public static final int textView2=0x7f08000b;
+        public static final int welcome_EditText_password=0x7f080017;
+        public static final int welcome_EditText_username=0x7f080016;
     }
     public static final class layout {
-        public static final int activity_dashboard_view=0x7f030000;
-        public static final int activity_login_view=0x7f030001;
-        public static final int activity_register_view=0x7f030002;
-        public static final int activity_welcome_view=0x7f030003;
+        public static final int activity_create_new_account_view=0x7f030000;
+        public static final int activity_dashboard_view=0x7f030001;
+        public static final int activity_login_view=0x7f030002;
+        public static final int activity_register_view=0x7f030003;
+        public static final int activity_welcome_view=0x7f030004;
     }
     public static final class menu {
-        public static final int dashboard_view=0x7f070000;
-        public static final int login_view=0x7f070001;
-        public static final int main=0x7f070002;
-        public static final int register_view=0x7f070003;
+        public static final int create_new_account_view=0x7f070000;
+        public static final int dashboard_view=0x7f070001;
+        public static final int login_view=0x7f070002;
+        public static final int main=0x7f070003;
+        public static final int register_view=0x7f070004;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
@@ -70,6 +76,7 @@ public final class R {
         public static final int password=0x7f060007;
         public static final int register=0x7f060006;
         public static final int tagline=0x7f060001;
+        public static final int title_activity_create_new_account_view=0x7f06000d;
         public static final int title_activity_dashboard_view=0x7f06000c;
         public static final int title_activity_login_view=0x7f06000a;
         public static final int title_activity_register_view=0x7f06000b;
