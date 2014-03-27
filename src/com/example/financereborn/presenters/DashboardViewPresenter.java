@@ -26,6 +26,7 @@ public class DashboardViewPresenter extends ObserverActivity {
 		switch (v.getId()) {
 		case R.id.dashboard_Button_createNewAccount:
 			startCreateNewAccountActivity();
+			finishActivity();
 			break;
 		}
 	}
@@ -34,5 +35,10 @@ public class DashboardViewPresenter extends ObserverActivity {
 		Activity activity = super.getSubject();
 		Intent intent = new Intent(activity, CreateNewAccountViewActivity.class);
 		activity.startActivity(intent);
+	}
+	
+	private void finishActivity() {
+		Activity activity = super.getSubject();
+		activity.finish();
 	}
 }

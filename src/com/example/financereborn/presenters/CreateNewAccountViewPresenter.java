@@ -2,11 +2,13 @@ package com.example.financereborn.presenters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.example.financereborn.R;
+import com.example.financereborn.activities.DashboardViewActivity;
 import com.example.financereborn.database.Database;
 import com.example.financereborn.models.Account;
 import com.example.financereborn.odp.ObserverActivity;
@@ -23,6 +25,7 @@ public class CreateNewAccountViewPresenter extends ObserverActivity {
 	public void update(View v) {
 		switch (v.getId()) {
 		case R.id.create_new_account_Button_cancel:
+			startDashboardActivity();
 			finishActivity();
 			break;
 		case R.id.create_new_account_Button_addAccount:
@@ -32,6 +35,7 @@ public class CreateNewAccountViewPresenter extends ObserverActivity {
 				Database.addAccount(new Account(view.getAccountName(), view
 						.getAccountDesc()));
 				toast("Account create sucessfully.");
+				startDashboardActivity();
 				finishActivity();
 			} else {
 				toast("Something isn't right. Try again.");
@@ -55,6 +59,12 @@ public class CreateNewAccountViewPresenter extends ObserverActivity {
 	private void finishActivity() {
 		Activity activity = super.getSubject();
 		activity.finish();
+	}
+	
+	private void startDashboardActivity() {
+		Activity activity = super.getSubject();
+		Intent intent = new Intent(activity, DashboardViewActivity.class);
+		activity.startActivity(intent);
 	}
 
 	private void toast(String msg) {
